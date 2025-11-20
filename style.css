@@ -23,6 +23,7 @@ header ul {
   list-style: none;
   gap: 30px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 header ul li a {
@@ -45,33 +46,103 @@ main > aside {
   gap: 20px;
   padding: 30px;
 }
-main > aside h2{
-    color: white;
+main > aside h2 {
+  color: white;
 }
-main > aside ul{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    color: white;
-    list-style: none;
-    
+main > aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  list-style: none;
 }
-main > aside ul li a{
-    color: white;
-    text-decoration: none;
+main > aside ul li a {
+  color: white;
+  text-decoration: none;
 }
 .container {
   width: 80%;
   max-height: calc(100vh - 70px);
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
+#image_my {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(128, 128, 128, 0.461);
+}
+.all_projects,
+.my_projects,
+.about {
+  width: 100%;
+  box-shadow: 0 0 5px 1px rgba(128, 128, 128, 0.461);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-footer{
-    height: 70px;
-    width: 100vw;
-    background-color: #000000d1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.about > div {
+  display: flex;
+  gap: 20px;
+}
+.about > div p {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+.about > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  width: 20%;
+  text-align: center;
+}
+.my_projects > div {
+  display: flex;
+  gap: 30px;
+}
+.projects_all:first-child {
+  background-color: lightblue;
+}
+.projects_all:last-child {
+  background-color: lightgreen;
+}
+.projects_all {
+  width: calc(100% / 3);
+  background-color: lightcoral;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px;
+}
+
+footer {
+  height: 70px;
+  width: 100vw;
+  background-color: #000000d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.prject_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ta teng ustun */
+  gap: 20px;
+}
+
+.prject_container > img {
+  width: 100%;
+  height: 250px;
+  border-radius: 7px;
 }
